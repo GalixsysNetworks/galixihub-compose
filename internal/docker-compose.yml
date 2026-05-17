@@ -8,6 +8,7 @@ services:
       MARIADB_ROOT_PASSWORD: rootpass
       MARIADB_USER: galixidb
       MARIADB_PASSWORD: galixidb
+      # TODO: Need to have the password be configurable in the docker image, and then set here.
 
     volumes:
       - mariadb-data:/var/lib/mysql

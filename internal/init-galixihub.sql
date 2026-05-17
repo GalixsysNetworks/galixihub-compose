@@ -3,6 +3,7 @@ CREATE DATABASE IF NOT EXISTS licdb;
 CREATE DATABASE IF NOT EXISTS networkdb;
 CREATE DATABASE IF NOT EXISTS membersdb;
 CREATE DATABASE IF NOT EXISTS worldsdb;
+CREATE DATABASE IF NOT EXISTS pendingmsgdb;
 
 -- Create user for any host
 CREATE USER IF NOT EXISTS 'galixidb'@'%' IDENTIFIED BY 'galixidb';
@@ -22,6 +23,9 @@ GRANT ALL PRIVILEGES ON membersdb.* TO 'galixidb'@'localhost';
 
 GRANT ALL PRIVILEGES ON worldsdb.* TO 'galixidb'@'%';
 GRANT ALL PRIVILEGES ON worldsdb.* TO 'galixidb'@'localhost';
+
+GRANT ALL PRIVILEGES ON pendingmsgdb.* TO 'galixidb'@'%';
+GRANT ALL PRIVILEGES ON pendingmsgdb.* TO 'galixidb'@'localhost';
 
 FLUSH PRIVILEGES;
 
