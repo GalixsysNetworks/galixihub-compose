@@ -24,6 +24,7 @@ services:
 
   galixihub:
     image: galixsysnetworks/galixihub:latest
+    pull_policy: always
     container_name: galixihub
     restart: "no"
 

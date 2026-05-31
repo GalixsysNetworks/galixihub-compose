@@ -48,6 +48,9 @@ echo "Environment OK"
 export GALIXIHUB_PORT_PLUS1=$((GALIXIHUB_PORT + 1))
 export GALIXIHUB_BASE_DIR="$SCRIPT_DIR"
 
+echo "Pulling latest GalixiHub image..."
+docker compose -f "$COMPOSE_FILE" pull galixihub
+
 echo "Starting containers..."
 docker compose -f "$COMPOSE_FILE" up -d
 
