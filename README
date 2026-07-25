@@ -83,16 +83,16 @@ sudo ./galixistop.sh -r
 Initial configuration is defined in:
 galixihub.env
 
-
 Important variables include:
 GALIXIHUB_WORLD_NAME
 GALIXIHUB_HOSTNAME
 GALIXIHUB_PORT
 GALIXIHUB_OWNER_CODE
+GALIXIHUB_LOCAL_IP
 
 These values are used during initial world creation.
 
-After a world has been created some values cannot be changed.
+After a world has been created these values cannot be changed.
 
 ---
 ## Licensing
